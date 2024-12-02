@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  all: unset; 
+  display: inline;
+  cursor: pointer;
+  color: green;
+  text-shadow: var(--text-shadow);
+}
+
+body {
+  background-color: var(--body-color);
+  font-family: "Inter", sans-serif;
+  color: var(--text-color);
+}
+
+:root {
+  --body-color: #f4f2ee;
+  --base-color: #fff;
+  --text-color: #121212;
+  --box-shadow: -3px 15px 34px -5px rgba(0,0,0,0.75);
+  --border: rgba(0, 0, 0, 0.1);
+  --text-shadow: 4px 4px 10px rgba(0,0,0,0.4);
+  --footer-shadow:  -1px -9px 19px -7px rgba(0,0,0,0.63);
+}
+
+.dark {
+  --body-color: #1e1e1e;
+  --base-color: #2a2a2a;
+  --text-color: #f4f4f4;
+  --box-shadow: -3px 15px 34px -5px rgba(255, 255, 255, 0.278);;
+  --border: rgba(255, 255, 255, 0.1);
+  --text-shadow: 4px 4px 10px rgba(255, 255, 255, 0.188);
+  --footer-shadow:  -1px -9px 19px -7px rgba(255,255,255,0.63);
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 12px;
+  max-width: 1158px;
+}
+
+input {
+  width: 70%;
+}
+
+.box {
+  padding: 24px;
+  background-color: var(--base-color);
+  border-radius: 12px;
+  margin-bottom: 40px;
+  text-align: center;
+  text-shadow: var(--text-shadow);
+}
+
+.box-shadow {
+  box-shadow: var(--box-shadow);
+}
+
+.box h1 {
+  margin-bottom: 12px;
+}
+
+/* Header Area */
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 96px;
+  margin-top: 12px;
+}
+.header-top {
+  display: flex;
+  justify-content: space-between;
+}
+.profile-img {
+  border-radius: 100%;
+  object-fit: cover;
+  margin-top: -80px;
+}
+
+/* Body Area */
+main {
+  margin-top: 40px;
+  margin-bottom: 80px;
+  height: 100%;
+}
+
+/* Footer Area (Area-51) */
+footer {
+  background-color: var(--base-color);
+  text-align: center;
+  width: 100%;
+  padding: 16px;
+  border-radius: 50% 50% 0 0;
+  text-shadow: var(--text-shadow);
+  box-shadow: var(--footer-shadow);
+}
